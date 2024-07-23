@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alamat Domain Telah Pindah</title>
+    <meta http-equiv="refresh" content="5;url=https://www.toko-tmctomystudio.rf.gd/">
     <style>
         html, body {
             height: 100%;
@@ -39,6 +40,12 @@
             font-size: 16px;
             margin-bottom: 20px;
         }
+        .countdown {
+            font-size: 18px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #dc3545;
+        }
         .btn {
             display: inline-block;
             padding: 12px 25px;
@@ -62,12 +69,26 @@
 <body>
     <div class="container">
         <h1>Alamat Domain Telah Pindah</h1>
-        <p>Domain kami telah pindah ke <a href="https://www.toko-tmctomystudio.rf.gd/" target="_blank">https://www.toko-tmctomystudio.rf.gd/</a> Silakan salin dan paste !</p>
-        <p>Atau Klik Tombol Dibawah:</p>
+        <p>Domain kami telah pindah ke <a href="https://www.toko-tmctomystudio.rf.gd/" target="_blank">https://www.toko-tmctomystudio.rf.gd/</a></p>
+        <p>Anda akan otomatis dialihkan dalam <span id="countdown" class="countdown">5 detik</span>.</p>
+        <p>Atau langsung klik tombol di bawah ini:</p>
         <p><a href="https://www.toko-tmctomystudio.rf.gd/" class="btn" target="_blank">Kunjungi Sekarang</a></p>
         <div class="footer">
             <p>tMC Tomy Studio</p>
         </div>
     </div>
+    <script>
+        // Countdown Timer Script
+        let countdownElement = document.getElementById('countdown');
+        let countdownTime = 5;
+        function updateCountdown() {
+            countdownElement.textContent = countdownTime + ' detik';
+            if (countdownTime > 0) {
+                countdownTime--;
+                setTimeout(updateCountdown, 1000);
+            }
+        }
+        updateCountdown();
+    </script>
 </body>
 </html>
